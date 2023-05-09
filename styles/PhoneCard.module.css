@@ -1,0 +1,31 @@
+.phonecard {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #d6dee2;
+  width: 80%;
+  margin: 5px auto 0px auto;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  .phonecard {
+    
+  }
+}
+
+.phonecardFirst {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.phoneName {
+  margin: 1rem;
+  font-size: 18px;
+}
+
+.phonecardBtn {
+  margin-right: 3rem;
+}

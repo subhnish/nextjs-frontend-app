@@ -1,0 +1,115 @@
+.romcard {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background: #d6dee2;
+  width: 80%;
+  margin: 5px auto 0px auto;
+  border-radius: 5px;
+}
+
+@media only screen and (max-width: 650px) {
+  .romcard {
+    flex-direction: row;
+    padding: 0.2rem;
+    width: 95%;
+  }
+}
+
+.romcardFirst {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+
+.romVersionHeading {
+  margin: 1rem;
+  font-size: 18px;
+}
+
+.downloadBtn {
+  margin-left: 50%;
+  transform: translateX(-50%);
+  width: fit-content;
+}
+
+.romDownloadBtn {
+  align-items: center;
+}
+
+.romDate {
+  font-size: 13px;
+}
+
+.romcardInfo {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  background: #c6cfd3;
+  grid-template-areas:
+    "first second"
+    "third fourth"
+    "fifth fifth";
+  width: 78%;
+  margin: 0px auto 5px auto;
+  padding: 10px;
+  border-radius: 5px;
+  border-top-right-radius: 0px;
+  border-top-left-radius: 0px;
+}
+
+@media only screen and (max-width: 950px) {
+  .romcardInfo {
+    display: flex;
+    flex-direction: column;
+    width: 78%;
+  }
+
+  .romcardInfo > * {
+    margin: 0.2rem;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .romcardInfo {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+  }
+
+  .romcardInfo > * {
+    margin: 0.2rem;
+  }
+}
+
+.itemA {
+  grid-area: first;
+}
+.itemB {
+  grid-area: second;
+}
+.itemC {
+  grid-area: third;
+}
+
+.itemD {
+  grid-area: fourth;
+ 
+}
+
+.itemE {
+  grid-area: fifth;
+  width: fit-content;
+  margin: 1rem auto ;
+  display: inline;
+}
+
+.hidden {
+  display: none;
+}
+
+
+   
+
+
